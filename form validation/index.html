@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+   <div class="cont">
+    <h3>login</h3>
+    <form action="" onclick="return validate()">
+        <input type="text" placeholder="User Name" id="uname"><br>
+         <p id="uerror" class="error"></p>
+        <input type="password" placeholder="password" id="pass"><br>
+        <p id="perror" class="error"></p>
+        <input type="submit" value="submit here">
+    </form>
+   </div>
+   <script>
+let uname= document.getElementById("uname")
+let pass=document.getElementById("pass")
+let flag=1;
+function validate(){
+    if(uname.value=="")
+    {
+        document.getElementById("uerror").innerHTML="user name is empty";
+        flag=0;
+    }else if(uname.value.length<3)
+        {
+            document.getElementById("uerror").innerHTML="user require min 3 char";
+            flag=0;
+        }
+        else{
+            document.getElementById("uerror").innerHTML=" ";
+            flag=1
+        }
+        if(pass.value==""){
+            document.getElementById("perror").innerHTML="password is empty";    
+            flag=0;
+        }else{
+            document.getElementById("perror").innerHTML=" ";
+            flag=1; 
+        }
+    if(flag){
+        return true;
+    }else{
+        return false;
+    }
+    }
+
+   </script>
+</body>
+</html>

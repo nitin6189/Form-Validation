@@ -1,0 +1,31 @@
+body{
+    padding:148px 538px;
+    background-color: #3498db;
+  }
+  .cont{
+    border: 2px solid #3498db;
+    text-align: center;
+    background-color: white;
+  }
+  input{
+    margin-bottom: 3px;
+    /* font-size: 10px; */
+    width:228px ;
+    height: 29px;
+  }
+  input[type="submit"]{
+    width: 237px;
+    height: 36px;
+    margin-bottom: 60px;
+    background-color: #3498db;
+ }
+ .cont h3{
+    margin-top: 42px;
+ }
+ .error{
+   color: red;
+   margin: 0px;
+   text-align: left;
+   padding-left: 44px;
+   padding-bottom: 10px;
+ }
